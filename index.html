@@ -2,7 +2,7 @@
 <html lang="de">
 <head>
     <meta charset="UTF-8">
-    <title>Commands Git</title>
+    <title>Commands Git & SSH</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -31,11 +31,11 @@
 </head>
 <body>
 
-<h1>Commands Git</h1>
+<h1>Commands Git & SSH</h1>
 
-<!-- Infos zu AWS -->
+<!-- Git Commands Section -->
 <section>
-    <h2>Commands Git:</h2>
+    <h2>Git Commands:</h2>
     <ul>
         <li><strong><code>git init</code>:</strong> initialize an existing directory as a Git repository</li>
         <li><strong><code>git clone &lt;repository&gt;</code>:</strong> clone a repository into a new directory</li>
@@ -53,6 +53,22 @@
         <li><strong><code>git rebase</code>:</strong> reapply commits on top of another base tip</li>
         <li><strong><code>git stash</code>:</strong> stash the changes in a dirty working directory away</li>
         <li><strong><code>git tag</code>:</strong> create, list, delete, or verify a tag object signed with GPG</li>
+    </ul>
+</section>
+
+<!-- SSH Commands Section -->
+<section>
+    <h2>SSH Commands:</h2>
+    <ul>
+        <li><strong><code>ssh &lt;user&gt;@&lt;hostname&gt;</code>:</strong> connect to a remote host</li>
+        <li><strong><code>ssh-keygen</code>:</strong> generate a new SSH key pair</li>
+        <li><strong><code>ssh-copy-id &lt;user&gt;@&lt;hostname&gt;</code>:</strong> install an SSH key on a remote host</li>
+        <li><strong><code>ssh-add &lt;keyfile&gt;</code>:</strong> add a private key to the SSH authentication agent</li>
+        <li><strong><code>ssh-agent</code>:</strong> start the SSH authentication agent</li>
+        <li><strong><code>scp &lt;source&gt; &lt;destination&gt;</code>:</strong> securely copy files between hosts</li>
+        <li><strong><code>ssh -L &lt;local_port&gt;:localhost:&lt;remote_port&gt; &lt;user&gt;@&lt;hostname&gt;</code>:</strong> create a local port forwarding</li>
+        <li><strong><code>ssh -R &lt;remote_port&gt;:localhost:&lt;local_port&gt; &lt;user&gt;@&lt;hostname&gt;</code>:</strong> create a remote port forwarding</li>
+        <li><strong><code>ssh -D &lt;local_port&gt; &lt;user&gt;@&lt;hostname&gt;</code>:</strong> create a dynamic application-level port forwarding</li>
     </ul>
 </section>
 
